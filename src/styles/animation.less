@@ -1,0 +1,115 @@
+@keyframes shake {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    5% {
+        transform: translate3d(10px, 0, 0);
+    }
+    10% {
+        transform: translate3d(0px, 0, 0);
+    }
+    15% {
+        transform: translate3d(10px, 0, 0);
+    }
+    20% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes duang {
+    0% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.1);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.slide-in-right-enter-active {
+    transition: all 0.3s;
+}
+
+.slide-in-right-enter {
+    transform: translate3d(100%, 0, 0);
+}
+
+.slide-in-bottom-enter-active {
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-in-bottom-enter {
+    transform: translate3d(0, -100%, 0);
+}
+
+.slide-in-bottom-leave-active {
+    transition: all 0.3s ease-in-out;
+}
+
+.slide-in-bottom-leave-to {
+    transform: translate3d(0, -100%, 0);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+    transition: all 0.5s;
+}
+
+.slide-enter,
+.slide-leave-to {
+    transform: translate3d(0, 100%, 0);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s linear;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/*购物车打开动画*/
+
+.cart-enter-active,
+.alert-enter-active {
+    animation: alert_animation 0.5s;
+}
+
+@keyframes alert_animation {
+    0% {
+        transform: scale(0.98);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1);
+    }
+    85% {
+        transform: scale(1.01);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 会员卡动画 */
+
+.vip-enter-active {
+    transition: all 0.5s;
+}
+
+.vip-enter {
+    opacity: 0;
+    transform: translate3d(0, -30%, 0);
+}

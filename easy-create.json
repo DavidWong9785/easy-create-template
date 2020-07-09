@@ -1,0 +1,10 @@
+[
+	{
+		"from": "/package.js",
+		"to": "/package.json"
+	},
+	{
+		"from": "/src/extends/index.js",
+		"to": "/src/extends/index.js"
+	}
+]
