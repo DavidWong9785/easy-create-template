@@ -40,7 +40,7 @@ export default {
     Vue.use(filters)
     Vue.use(VueLazyload, {
       // preLoad: 1.3,
-      error: require('./assets/icon_message.png'),
+      error: require('../assets/icon_message.png'),
       loading: lazyImg,
       attempt: 1
     })

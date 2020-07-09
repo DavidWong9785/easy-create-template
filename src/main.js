@@ -27,11 +27,6 @@ Vue.use(extend)
 
 Vue.config.productionTip = false
 
-window.$http = Vue.prototype.$http = yebaApi({
-  test: config.test,
-  debug: config.debug
-});
-
 window.app = new Vue({
   el: '#app',
   router,
