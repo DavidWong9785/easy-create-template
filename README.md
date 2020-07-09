@@ -1,2 +1,2 @@
-# easy-create-template
-easy-create的example模板
+# easy-create项目模板
+# author DavidWong (mail@davidwong.cn)
