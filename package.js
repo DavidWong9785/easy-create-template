@@ -1,5 +1,5 @@
 module.exports = function({ eventName }) {
-  return `{
+  return `
   {
     "name": "${eventName}",
     "version": "0.1.0",
